@@ -1,0 +1,10 @@
+{
+  "name": "miniprogram-bridge-test",
+  "uuid": "67590b3a-ba5f-4d18-82ac-77caed98676e",
+  "creator": {
+    "version": "3.8.3"
+  },
+  "dependencies": {
+    "inge-bridge": "file:../../miniprogram-bridge"
+  }
+}
