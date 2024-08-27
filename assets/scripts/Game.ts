@@ -6,9 +6,7 @@ const { ccclass, property } = _decorator;
 export class Game extends Component {
     onLoad() {
         IngeBridge.init({
-            ygOptions: {
-                env: 'test'
-            },
+            env: 'test',
             alipayOptions: {
                 channelCode: '883e823e9883524da169768612a02ec1',
                 adCode: '202405191900347095',
