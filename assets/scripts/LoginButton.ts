@@ -1,5 +1,5 @@
 import { _decorator, Component, Node, input, Input } from 'cc';
-import { login } from 'inge-bridge';
+import { IngeBridge } from 'inge-bridge';
 
 const { ccclass, property } = _decorator;
 
@@ -18,7 +18,7 @@ export class LoginButton extends Component {
     }
 
     onLogin(event) {
-        login()
+        IngeBridge.login()
     }
 }
 

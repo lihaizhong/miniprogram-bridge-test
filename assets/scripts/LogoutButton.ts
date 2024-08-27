@@ -1,5 +1,5 @@
 import { _decorator, Component, Node, input, Input } from 'cc';
-import { logout } from 'inge-bridge';
+import { IngeBridge } from 'inge-bridge';
 const { ccclass, property } = _decorator;
 
 @ccclass('LoginoutButton')
@@ -17,7 +17,7 @@ export class LoginoutButton extends Component {
     }
 
     onLogout(event) {
-        logout()
+        IngeBridge.logout()
     }
 }
 
