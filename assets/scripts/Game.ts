@@ -1,11 +1,11 @@
 import { _decorator, Component, Node } from 'cc';
-import { IngeBridge } from 'inge-bridge'
+import Inge from 'inge-bridge'
 const { ccclass, property } = _decorator;
 
 @ccclass('Game')
 export class Game extends Component {
     onLoad() {
-        IngeBridge.init({
+        Inge.init({
             env: 'test',
             alipayOptions: {
                 channelCode: '883e823e9883524da169768612a02ec1',
