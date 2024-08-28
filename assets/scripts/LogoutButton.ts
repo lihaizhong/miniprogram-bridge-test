@@ -20,4 +20,3 @@ export class LoginoutButton extends Component {
         Inge.logout()
     }
 }
-
