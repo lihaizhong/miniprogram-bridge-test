@@ -4,7 +4,7 @@ const { ccclass, property } = _decorator;
 
 @ccclass('Game')
 export class Game extends Component {
-    onLoad() {
+    protected onLoad() {
         Inge.init({
             env: 'test',
             alipayOptions: {
