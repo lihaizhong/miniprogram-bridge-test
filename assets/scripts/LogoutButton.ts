@@ -1,13 +1,9 @@
-import { _decorator, Component, Node, input, Input } from 'cc';
+import { _decorator, Component } from 'cc';
 import Inge from 'inge-bridge';
 const { ccclass, property } = _decorator;
 
 @ccclass('LoginoutButton')
 export class LoginoutButton extends Component {
-    protected onLoad(): void {
-        input.on(Input.EventType.TOUCH_START, this.onLogout, this)
-    }
-
     onLogout(event) {
         Inge.logout()
     }
