@@ -4,7 +4,13 @@
   "creator": {
     "version": "3.8.3"
   },
+  "scripts": {
+    "preview:alipay": "minidev preview -a 2021004143672001  -p ./build/alipay-mini-game"
+  },
   "dependencies": {
     "inge-bridge": "file:../../miniprogram-bridge"
+  },
+  "devDependencies": {
+    "minidev": "^2.1.7"
   }
 }
