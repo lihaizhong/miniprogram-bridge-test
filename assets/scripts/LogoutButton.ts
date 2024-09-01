@@ -7,14 +7,6 @@ export class LoginoutButton extends Component {
     protected onLoad(): void {
         input.on(Input.EventType.TOUCH_START, this.onLogout, this)
     }
-    
-    start() {
-
-    }
-
-    update(deltaTime: number) {
-        
-    }
 
     onLogout(event) {
         Inge.logout()

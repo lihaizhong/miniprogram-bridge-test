@@ -23,13 +23,4 @@ export class Game extends Component {
             }
         })
     }
-
-    start() {
-
-    }
-
-    update(deltaTime: number) {
-        
-    }
 }
-

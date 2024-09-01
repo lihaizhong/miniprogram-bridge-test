@@ -1,14 +1,19 @@
-import { _decorator, Component, Node } from 'cc';
+import { _decorator, Component, Input, input, Node } from 'cc';
+import Inge from 'inge-bridge';
+
 const { ccclass, property } = _decorator;
 
 @ccclass('AddRoleButton')
 export class AddRoleButton extends Component {
-    start() {
-
+    protected onLoad(): void {
+        input.on(Input.EventType.TOUCH_START, this.onAddRole, this)
     }
 
-    update(deltaTime: number) {
-        
+    onAddRole(event) {
+        Inge.addUserRole({
+            gameRoleId: '',
+            buyerId: '',
+            gameServeId: ''
+        })
     }
 }
-

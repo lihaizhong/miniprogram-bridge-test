@@ -9,14 +9,6 @@ export class LoginButton extends Component {
         input.on(Input.EventType.TOUCH_START, this.onLogin, this)
     }
 
-    start() {
-
-    }
-
-    update(deltaTime: number) {
-        
-    }
-
     onLogin(event) {
         Inge.login()
     }
