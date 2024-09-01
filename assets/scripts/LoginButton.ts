@@ -7,5 +7,8 @@ const { ccclass, property } = _decorator;
 export class LoginButton extends Component {
     onLogin(event) {
         Inge.login()
+            .catch((err) => {
+                console.error(err.toString())
+            })
     }
 }

@@ -6,5 +6,8 @@ const { ccclass, property } = _decorator;
 export class LoginoutButton extends Component {
     onLogout(event) {
         Inge.logout()
+            .catch((err) => {
+                console.error(err.toString())
+            })
     }
 }

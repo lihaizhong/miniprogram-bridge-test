@@ -12,5 +12,8 @@ export class UploadTaskButton extends Component {
             buyerId: '',
             actionFinishDate: ''
         })
+            .catch((err) => {
+                console.error(err.toString())
+            })
     }
 }

@@ -11,5 +11,8 @@ export class AddRoleButton extends Component {
             buyerId: '',
             gameServeId: ''
         })
+            .catch((err) => {
+                console.error(err.toString())
+            })
     }
 }
