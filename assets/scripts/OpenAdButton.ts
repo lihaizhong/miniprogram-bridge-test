@@ -1,5 +1,5 @@
 import { _decorator, Component } from 'cc';
-import Inge, { BridgeErrorItem } from 'inge-bridge';
+import Inge, { BridgeErrorItem, log } from 'inge-bridge';
 
 const { ccclass, property } = _decorator;
 
@@ -11,7 +11,7 @@ export class OpenAdButton extends Component {
 
             Inge.createRewardedAd(result.data.adUnitId)
         } catch (err) {
-            console.error(err.toString())
+            log.error(err)
         }
     }
 }

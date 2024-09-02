@@ -1,5 +1,5 @@
 import { _decorator, Component } from 'cc';
-import Inge from 'inge-bridge';
+import Inge, { log } from 'inge-bridge';
 
 const { ccclass, property } = _decorator;
 
@@ -15,7 +15,7 @@ export class ShareButton extends Component {
                 query: result.data.shareQuery
             })
         } catch (err) {
-            console.error(err.toString())
+            log.error(err)
         }
     }
 }

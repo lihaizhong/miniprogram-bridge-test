@@ -1,5 +1,5 @@
 import { _decorator, Component } from 'cc';
-import Inge from 'inge-bridge';
+import Inge, { log } from 'inge-bridge';
 
 const { ccclass, property } = _decorator;
 
@@ -12,7 +12,7 @@ export class AddRoleButton extends Component {
             gameServeId: ''
         })
             .catch((err) => {
-                console.error(err.toString())
+                log.error(err)
             })
     }
 }
