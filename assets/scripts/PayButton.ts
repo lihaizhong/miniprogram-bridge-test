@@ -1,5 +1,5 @@
 import { _decorator, Component } from 'cc';
-import Inge, { log } from 'inge-bridge';
+import Inge, { configure, log } from 'inge-bridge';
 
 const { ccclass, property } = _decorator;
 
@@ -13,7 +13,7 @@ export class PayButton extends Component {
                 subject: '',
                 gameRoleId: '',
                 body: '',
-                buyerId: '',
+                buyerId: configure.getUserId(),
                 notifyUrl: ''
             })
     

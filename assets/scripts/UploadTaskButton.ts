@@ -1,5 +1,5 @@
 import { _decorator, Component } from 'cc';
-import Inge, { log } from 'inge-bridge';
+import Inge, { configure, log } from 'inge-bridge';
 
 const { ccclass, property } = _decorator;
 
@@ -9,7 +9,7 @@ export class UploadTaskButton extends Component {
         Inge.uploadTaskCompletionBehavior({
             cpOutBizNo: '',
             gameRoleId: '',
-            buyerId: '',
+            buyerId: configure.getUserId(),
             actionFinishDate: ''
         })
             .catch((err) => {

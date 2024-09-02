@@ -1,5 +1,5 @@
 import { _decorator, Component } from 'cc';
-import Inge, { log } from 'inge-bridge';
+import Inge, { configure, log } from 'inge-bridge';
 
 const { ccclass, property } = _decorator;
 
@@ -8,7 +8,7 @@ export class AddRoleButton extends Component {
     onAddRole(event) {
         Inge.addUserRole({
             gameRoleId: '',
-            buyerId: '',
+            buyerId: configure.getUserId(),
             gameServeId: ''
         })
             .catch((err) => {
