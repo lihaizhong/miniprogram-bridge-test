@@ -5,12 +5,14 @@
     "version": "3.8.3"
   },
   "scripts": {
-    "preview:alipay": "minidev preview -a 2021004143672001  -p ./build/alipay-mini-game"
+    "preview:alipay": "minidev preview -a 2021004143672001  -p ./build/alipay-mini-game",
+    "preview:taobao": "taobaodev build-preview -a 3000000116282392 -i ./build/taobao-mini-game -d"
   },
   "dependencies": {
     "inge-bridge": "file:../../miniprogram-bridge"
   },
   "devDependencies": {
-    "minidev": "^2.1.7"
+    "minidev": "^2.1.7",
+    "taobaodev": "^0.0.11-beta.10"
   }
 }
