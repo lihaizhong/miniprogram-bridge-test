@@ -6,7 +6,7 @@ const { ccclass, property } = _decorator;
 @ccclass('LoginButton')
 export class LoginButton extends Component {
     onLogin(event) {
-        Inge.login()
+        Inge.services.login()
             .catch((err) => {
                 log.error(err)
             })

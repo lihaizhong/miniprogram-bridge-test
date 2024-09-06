@@ -7,7 +7,7 @@ const { ccclass, property } = _decorator;
 export class PayButton extends Component {
     async onPay(event) {
         try {
-            const result = await Inge.getPayTradeNo({
+            const result = await Inge.services.getPayTradeNo({
                 outTradeNo: '',
                 totalAmount: 0.1,
                 subject: '',
@@ -17,7 +17,7 @@ export class PayButton extends Component {
                 notifyUrl: ''
             })
     
-            Inge.pay({
+            Inge.services.pay({
                 // 支付宝
                 customId: result.data.customId,
                 buyQuantity: '',

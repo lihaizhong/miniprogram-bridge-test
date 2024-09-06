@@ -6,7 +6,7 @@ const { ccclass, property } = _decorator;
 @ccclass('UploadTaskButton')
 export class UploadTaskButton extends Component {
     onUploadTask(event) {
-        Inge.uploadTaskCompletionBehavior({
+        Inge.services.uploadTaskCompletionBehavior({
             cpOutBizNo: '',
             gameRoleId: '',
             buyerId: configure.getUserId(),

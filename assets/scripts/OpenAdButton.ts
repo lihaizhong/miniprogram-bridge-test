@@ -7,9 +7,9 @@ const { ccclass, property } = _decorator;
 export class OpenAdButton extends Component {
     async onOpenAd(event) {
         try {
-            const result = await Inge.getAdUnitId()
+            const result = await Inge.services.getAdUnitId()
 
-            Inge.createRewardedAd(result.data.adUnitId)
+            Inge.services.createRewardedAd(result.data.adUnitId)
         } catch (err) {
             log.error(err)
         }

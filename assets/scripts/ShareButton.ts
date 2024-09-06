@@ -7,9 +7,9 @@ const { ccclass, property } = _decorator;
 export class ShareButton extends Component {
     async onShareAppMessage(event) {
         try {
-            const result = await Inge.getShareProfile()
+            const result = await Inge.services.getShareProfile()
 
-            Inge.shareApp({
+            Inge.services.shareApp({
                 title: result.data.shareTitle,
                 desc: result.data.shareDesc,
                 query: result.data.shareQuery
