@@ -9,7 +9,9 @@
     "preview:taobao": "taobaodev build-preview -a 3000000116282392 -i ./build/taobao-mini-game -d"
   },
   "dependencies": {
-    "inge-bridge": "file:../../miniprogram-bridge"
+    "date-fns": "^4.1.0",
+    "inge-bridge": "file:../../miniprogram-bridge",
+    "nanoid": "^5.0.7"
   },
   "devDependencies": {
     "minidev": "^2.1.7",

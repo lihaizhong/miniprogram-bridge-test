@@ -7,9 +7,9 @@ const { ccclass, property } = _decorator;
 export class AddRoleButton extends Component {
     onAddRole(event) {
         Inge.services.addUserRole({
-            gameRoleId: '',
+            gameRoleId: 'test_role_01',
             buyerId: configure.getUserId(),
-            gameServeId: ''
+            // gameServeId: ''
         })
             .catch((err) => {
                 log.error(err)

@@ -11,7 +11,7 @@ export class PayButton extends Component {
                 outTradeNo: '',
                 totalAmount: 0.1,
                 subject: '',
-                gameRoleId: '',
+                gameRoleId: 'test_role_01',
                 body: '',
                 buyerId: configure.getUserId(),
                 notifyUrl: ''
