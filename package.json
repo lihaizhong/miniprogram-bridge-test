@@ -10,8 +10,7 @@
   },
   "dependencies": {
     "date-fns": "^4.1.0",
-    "inge-bridge": "file:../../miniprogram-bridge",
-    "nanoid": "^5.0.7"
+    "inge-bridge": "file:../../miniprogram-bridge"
   },
   "devDependencies": {
     "minidev": "^2.1.7",
