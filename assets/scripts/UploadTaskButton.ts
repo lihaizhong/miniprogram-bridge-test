@@ -27,7 +27,7 @@ export class UploadTaskButton extends Component {
             cpOutBizNo: generateUUID(),
             gameRoleId: 'test_role_01',
             buyerId: configure.getUserId(),
-            actionFinishDate: format(new Date(), 'yyyy-MM-dd hh:mm:ss')
+            actionFinishDate: format(new Date(), 'yyyy-MM-dd HH:mm:ss')
         })
             .catch((err) => {
                 log.error(err)
